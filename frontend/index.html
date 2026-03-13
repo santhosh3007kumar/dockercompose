@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Fullstack App</title>
-</head>
-
 <body>
 
-<h1>Frontend Container 🚀</h1>
+<h1>Frontend Running 🚀</h1>
 
 <button onclick="callAPI()">Call Backend</button>
 
@@ -14,7 +10,7 @@
 
 <script>
 function callAPI(){
-fetch("http://backend:5000/api")
+fetch("/api")
 .then(res=>res.text())
 .then(data=>{
 document.getElementById("result").innerHTML=data;
